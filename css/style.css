@@ -1,0 +1,231 @@
+.nav-container {
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+.navbar {
+    height: 55px;
+    background: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px;
+    z-index: 2;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 27px 0;
+}
+.navbar img{
+    width: 80%;
+    margin-top: -20px;
+}
+
+.nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav li a {
+    height: 55px;
+    background: #f7f7f7;
+    color: #6D6D6D;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 17px 20px;
+    transition: .2s;
+}
+
+.nav li a:hover, .activeNav {
+    color: #ff6600!important;
+    background: #f7f7f7;
+    border-bottom: 2px solid #ff6600;
+}
+
+.searchBox i {
+    background: #fff;
+    position: absolute;
+    display: inline-block;
+    padding: 5px;
+    transition: .3s;
+    top: 17px;
+}
+
+.searchBox input {
+    width: 100%;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    font-weight: 100;
+}
+
+.searchBox input:focus {
+    box-shadow: none;
+}
+
+.searchBox input:focus i {
+    color: #ff6600;
+}
+
+.navbar-toggle {
+    padding: 0 5px;
+}
+
+.navToggle {
+    display: none;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+    margin-top: 13px;
+    margin-right: -35px;
+}
+
+.navToggle span {
+    display: block;
+    width: 21px;
+    height: 2px;
+    background-color: black;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+    background: #ff6600;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -6px);
+    background: #ff6600;
+}  /*---------------- End Navigation ----------------*/
+
+#sMap {
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    width: 100%;
+}
+
+.mapBtn {
+    background: #fff;
+    border: 0;
+    border-radius: 2px;
+    color: #333333;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    width: 175px;
+    height: 32px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px;
+}
+
+.mapBtn:active {
+    background: #f7f7f7;
+}
+
+.mapIcon {
+    color: #02a5ce;
+    display: inline-block;
+    font-size: 17px!important;
+    text-align: center;
+    margin: 2px 10px 0 10px;
+} /*--------------------- End Map Styled ---------------*/
+
+.pac-container {
+    border-radius: 0 0 2px 2px;
+    height: 158px;
+}
+
+.pac-icon {
+
+}
+
+.pac-item:hover,
+.pac-item:hover .pac-matched,
+.pac-item:hover .pac-item-query,
+.pac-item:hover .pac-icon,
+.pac-item-selected,
+.pac-item-selected .pac-matched,
+.pac-item-selected .pac-item-query,
+.pac-item-selected .pac-icon {
+    color: #ff6600;
+}
+
+.pac-item-selected {
+    background: #f7f7f7;
+} /*----------------- End Style Search Box -----------------*/
+
+
+@media (max-width: 767px) {
+    .nav {
+        border-top: 1px solid #02a5ce;
+    }
+
+    .nav li a {
+        height: 37px;
+        line-height: 6px;
+        padding: 17px 20px;
+    }
+
+    .searchBox {
+        margin: 0;
+    }
+
+    .searchBox i {
+        right: 53px;
+    }
+
+    #searchInp {
+        margin-top: -11px;
+        margin-left: 11px;
+    }
+
+    .navToggle {
+        display: inline-block;
+    } /*----- End navigation -----*/
+
+    .mapBtn {
+        width: 36px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .mapIcon{
+        margin-left: 6px;
+    }
+    .mgL-3 {
+        margin-left: 3px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .searchBox i {
+        left: 294px;
+    } /*----- End navigation -----*/
+
+}
+
+@media (min-width: 992px) {
+    .searchBox i {
+        left: 437px;
+    }
+
+    .searchBox input {
+        width: 335px!important;
+    } /*----- End navigation -----*/
+}
+

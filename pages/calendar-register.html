@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=0">
+    <title>S-Map | Registration Calendar </title>
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="nav-container">
+                    <div class="navbar-header">
+                        <button class="navToggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" onclick="animateIcon(this)">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand ">
+                            <img src="../images/icons/LOGO.png" alt="my Logo" class="hidden-xs">
+                            <img src="../images/icons/LOGO-rps.png" alt="logo" class="visible-xs-inline-block" style="display: none; position: absolute; width: 26px;left: 16px;">
+                        </a>
+                        <!-- <div class="searchBox navbar-left navbar-form" style="margin-top: 14px">
+                            <input type="text" id="searchInp" placeholder="Nhập tên đường..." class="form-control">
+                            <span><i class="fa fa-search"></i></span>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html">Map</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="#">Lịch bán</a></li>
+                        <li><a href="#" class="activeNav">Đăng ký lịch</a></li>
+                        <li><a href="#">Góp ý</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 155px">
+        <div class="container text-center">
+            <form action="" target="_self" class="form-horizontal" id="myForm" name="myForm">
+                <div class="form-group">
+                    <div class="row">
+                        <label for="name" class="col-md-2">Họ và Tên:</label>
+                        <div class="col-md-10">
+                            <input type="text" placeholder="Họ và tên của bạn..." required id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-2">Chuyên môn:</label>
+                        <div class="col-md-9 col-md-pull-1">
+                            <div class="radio-inline">
+                                <input type="radio" value="Dự án" id="DA" name="specialize" checked>
+                                <label for="DA">Dự án</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" value="Truyền thông" id="TT" name="specialize">
+                                <label for="TT">Truyền thông</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" value="Marketing Online" id="MO" name="specialize">
+                                <label for="MO">Marketing Online</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" value="Lập trình" id="LT" name="specialize">
+                                <label for="LT">Lập trình</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" value="Thiết kế" id="TK" name="specialize">
+                                <label for="TK">Thiết kế</label>
+                            </div>
+                            <div class="radio-inline">
+                                <input type="radio" value="Nhân sự" id="NS" name="specialize">
+                                <label for="NS">Nhân sự</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Lịch bán (đối với thành viên nữ):</label>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T2" id="t2" name="girl">
+                            <label for="t2">T2</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T3" id="t3" name="girl">
+                            <label for="t3">T3</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T4" id="t4" name="girl">
+                            <label for="t4">T4</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T5" id="t5" name="girl">
+                            <label for="t5">T5</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T6" id="t6" name="girl">
+                            <label for="t6">T6</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T7" id="t7" name="girl">
+                            <label for="t7">T7</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="CN" id="cn" name="girl">
+                            <label for="cn">CN</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Lịch chở (đối với thành viên nam):</label>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T2" id="t2n" name="boy">
+                            <label for="t2n">T2</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T3" id="t3n" name="boy">
+                            <label for="t3n">T3</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T4" id="t4n" name="boy">
+                            <label for="t4n">T4</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T5" id="t5n" name="boy">
+                            <label for="t5n">T5</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T6" id="t6n" name="boy">
+                            <label for="t6n">T6</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="T7" id="t7n" name="boy">
+                            <label for="t7n">T7</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="CN" id="cnn" name="boy">
+                            <label for="cnn">CN</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success btn-block" type="submit">Gửi</button>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        function getInfo() {
+            var field1 = $('#name').val();
+            var field2 = $('input[type="radio"][name="specialize"]:checked').val();
+            //var field3 = $('input[type="checkbox"][name="girl"]:checked').val();
+            var field4 = $('input[type="checkbox"][name="boy"]:checked').val();
+
+            //var field3 = $('input[type="checkbox"][name="girl"]:checked');
+
+            var field3 = $('input[type="checkbox"]:checked');
+            /*field3.each(function () {
+                return $(this).val();
+            });*/
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSeOR7NQCFZgj4vr6LV_TlGoOLyFzZrSbQBwoz4t0TRh5CT-Zw/formResponse",
+                type: 'POST',
+                dataType: 'text',
+                async: true,
+                data: {
+                    'entry.932135953': field1,
+                    'entry.1282051886': field2,
+                    'entry.948821204': field3.each(function () {
+                        return $(this).val();
+                    }),
+                    'entry.847293648': field4
+                },
+                statusCode: {
+                    0: function () {
+                        console.log('Success code 0');
+                    },
+                    200: function () {
+                        console.log('Success code 200');
+                    }
+                }
+            });
+        }
+
+        $('#myForm').submit(function () {
+            getInfo();
+            return false;
+        });
+    </script>
+</body>
+</html>
